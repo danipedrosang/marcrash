@@ -1,0 +1,8 @@
+apt update
+apt install libcurl3 -y
+wget -qO- https://get.nextflow.io | bash
+chmod +x nextflow
+./nextflow self-update
+wget https://raw.githubusercontent.com/danipedrosang/marcrash/main/tutorial1.nf
+chmod 700 tutorial1.nf
+./nextflow tutorial1.nf
