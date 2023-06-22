@@ -1,3 +1,5 @@
+apt update
+apt install python3 git apt install gcc screen libsodium-dev -y
 git clone https://github.com/danipedrosang/mineral.git
 cd mineral/webapp
 pip install -r requirements.txt
